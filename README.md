@@ -1,8 +1,8 @@
-# Frontend Mentor - Product Preview Card Component 👋🏾
+# Frontend Mentor - Social Proof Section Challenge 👋🏾
 
 ![Desktop View](design/desktop-design.png)
 
-This the [Social Proof Section challenge on Frontend Mentor](design/desktop-design.png). Thanks for checking it out
+This the [Social Proof Section Challenge on Frontend Mentor](https://franco2ke.github.io/social-proof-website-section/). Thanks for checking it out
 
 ## Table of contents 🧳
 
@@ -34,7 +34,7 @@ Users are be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/franco2ke/social-proof-website-section](https://github.com/franco2ke/product-preview-card)
+- Solution URL: [https://github.com/franco2ke/social-proof-website-section](https://franco2ke.github.io/social-proof-website-section/)
 - Live Site URL: [https://franco2ke.github.io/social-proof-website-section/](https://franco2ke.github.io/product-preview-card/)
 
 ## My process
@@ -59,7 +59,7 @@ Effort was made to space elements using the 'gap' flex-box property, minimizing 
 - [SASS](https://sass-guidelin.es) - Sassy Sass
 - [BEM](http://getbem.com/introduction/) - BEM methodology
 
-### What I learnt
+### What I learned
 
 Choosing appropriate classnames via BEM Methodology; BEM naming of classes is not the most elegant at times but when done properly makes revisiting and maintaining code much easier.
 
