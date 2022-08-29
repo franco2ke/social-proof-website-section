@@ -35,7 +35,7 @@ Users are be able to:
 ### Links
 
 - Solution URL: [https://github.com/franco2ke/social-proof-website-section](https://franco2ke.github.io/social-proof-website-section/)
-- Live Site URL: [https://franco2ke.github.io/social-proof-website-section/](https://franco2ke.github.io/product-preview-card/)
+- Live Site URL: [https://franco2ke.github.io/social-proof-website-section/](https://franco2ke.github.io/social-proof-website-section/)
 
 ## My process
 
