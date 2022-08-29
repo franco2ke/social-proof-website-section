@@ -1,0 +1,44 @@
+.testimonial {
+  &-item {
+    background-color: $color-primary;
+    padding: 40px 30px;
+    border-radius: 10px;
+
+    &--two {
+      align-self: center;
+    }
+
+    &--three {
+      align-self: flex-end;
+    }
+
+    &__author {
+      display: flex;
+      margin-bottom: 30px;
+
+      &-image {
+        border-radius: 50%;
+        height: 40px;
+        // padding-right: 23px;
+      }
+
+      &-text-box {
+        padding-left: 23px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-name {
+        color: $color-grey-light;
+      }
+
+      &-detail {
+        color: $color-secondary;
+      }
+    }
+
+    &__review {
+      color: $color-grey-light;
+    }
+  }
+}

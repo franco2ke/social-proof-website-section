@@ -1,0 +1,46 @@
+.headline {
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  &__heading {
+    font-size: 52px;
+    line-height: 0.9;
+    letter-spacing: -0.5px;
+    color: $color-primary;
+    margin-bottom: 20px;
+    width: 330px;
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      width: 350px;
+      margin: 0 auto 24px;
+      line-height: 0.8;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: auto;
+    }
+  }
+
+  &__description {
+    // font-size: 32px;
+    color: $color-grey-dark;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 412px;
+    @media only screen and (max-width: $bp-large) {
+      width: 340px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      width: 412px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: auto;
+    }
+  }
+}

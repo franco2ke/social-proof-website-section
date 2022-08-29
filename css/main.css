@@ -1,0 +1,284 @@
+/* Reset margins, paddings and box-sizing to best defaults */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* 
+* 1. Set the rem (root em) unit for relative sizing
+* rem values are equal to the computed value of 'font-size' on the root element
+* The 'html' element is the document's root element
+* (user style default)16px * 62.5% = 10px
+* Set 1 rem unit to 10px for easier multiplication for various sizes 
+* Correct the line height in all browsers.
+* 3. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  font-size: 62.5%; /* 1 */
+  line-height: 1.15; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*
+  * Allow only vertical resizing of textareas.
+  */
+textarea {
+  resize: vertical;
+}
+
+/* Forms **************************************/
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 15px;
+}
+.attribution__link {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 50em) {
+  .headline {
+    grid-column: 1/-1;
+  }
+}
+.headline__heading {
+  font-size: 52px;
+  line-height: 0.9;
+  letter-spacing: -0.5px;
+  color: hsl(300deg, 43%, 22%);
+  margin-bottom: 20px;
+  width: 330px;
+}
+@media only screen and (max-width: 50em) {
+  .headline__heading {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto 24px;
+    line-height: 0.8;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .headline__heading {
+    width: auto;
+  }
+}
+.headline__description {
+  color: hsl(303deg, 10%, 53%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 412px;
+}
+@media only screen and (max-width: 62.5em) {
+  .headline__description {
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .headline__description {
+    text-align: center;
+    width: 412px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .headline__description {
+    width: auto;
+  }
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 62.5em) {
+  .ratings {
+    gap: 18px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .ratings {
+    grid-column: 1/-1;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .ratings {
+    align-items: stretch;
+  }
+}
+.ratings .ratings__item {
+  padding: 17.15px 33px;
+  background-color: hsl(300deg, 24%, 96%);
+  display: flex;
+  border-radius: 10px;
+  min-width: 443px;
+}
+.ratings .ratings__item:last-child {
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 62.5em) {
+  .ratings .ratings__item {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 55px;
+    min-width: initial;
+    height: 78px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .ratings .ratings__item {
+    padding: 15px 20px;
+  }
+}
+.ratings .ratings__item--one {
+  align-self: flex-start;
+}
+@media only screen and (max-width: 50em) {
+  .ratings .ratings__item--one {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .ratings .ratings__item--one {
+    align-self: stretch;
+  }
+}
+.ratings .ratings__item--two {
+  align-self: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .ratings .ratings__item--two {
+    align-self: stretch;
+  }
+}
+.ratings .ratings__item--three {
+  align-self: flex-end;
+}
+@media only screen and (max-width: 50em) {
+  .ratings .ratings__item--three {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .ratings .ratings__item--three {
+    align-self: stretch;
+  }
+}
+.ratings .ratings__stars {
+  margin-right: 24px;
+  line-height: 0.7;
+  align-self: center;
+}
+.ratings .ratings__description {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+}
+
+.testimonial-item {
+  background-color: hsl(300deg, 43%, 22%);
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+.testimonial-item--two {
+  align-self: center;
+}
+.testimonial-item--three {
+  align-self: flex-end;
+}
+.testimonial-item__author {
+  display: flex;
+  margin-bottom: 30px;
+}
+.testimonial-item__author-image {
+  border-radius: 50%;
+  height: 40px;
+}
+.testimonial-item__author-text-box {
+  padding-left: 23px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-item__author-name {
+  color: hsl(300deg, 24%, 96%);
+}
+.testimonial-item__author-detail {
+  color: hsl(333deg, 80%, 67%);
+}
+.testimonial-item__review {
+  color: hsl(300deg, 24%, 96%);
+}
+
+.l-social-section-container {
+  /* for multiple layered background images */
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  min-height: 100vh;
+}
+
+.l-social {
+  /* for centering / positioning the section components */
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 118px 36px 100px;
+  display: grid;
+  row-gap: 55px;
+  grid-template-columns: 1.05fr 1fr;
+}
+@media only screen and (max-width: 37.5em) {
+  .l-social {
+    padding: 118px 22px 100px;
+  }
+}
+
+.l-social-testimonial-items-container {
+  /* flexbox container for the testimonies, positioned via css grid */
+  grid-column: 1/-1;
+  display: flex;
+  height: 267px;
+  align-items: flex-start;
+  gap: 30px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+@media only screen and (max-width: 50em) {
+  .l-social-testimonial-items-container {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

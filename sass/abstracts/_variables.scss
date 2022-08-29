@@ -1,0 +1,24 @@
+// COLORS
+$color-primary: hsl(300, 43%, 22%); // very dark-magenta
+$color-secondary: hsl(333, 80%, 67%); // soft-pink
+
+$color-grey-dark: hsl(303, 10%, 53%); // dark greyish-magenta
+$color-grey-light: hsl(300, 24%, 96%); // light greyish-magenta
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+$default-font-size: 1.8rem;
+
+// GRID variables
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 75 * 16px = 1200px;
+$bp-large: 62.5em; // 62.5 * 16px = 1000px;
+$bp-medium: 50em; // 50 * 16px = 800px;
+$bp-small: 37.5em; // 37.5em * 16px = 600px;
